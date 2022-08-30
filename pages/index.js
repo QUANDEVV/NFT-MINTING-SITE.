@@ -16,7 +16,7 @@ export default function Index() {
       </Head>
       <Navbar/>
       {!address ? <Connect/> : <Dashboard/>}
-      <Footer/>
+      {/* <Footer/> */}
     </>
   );
 };

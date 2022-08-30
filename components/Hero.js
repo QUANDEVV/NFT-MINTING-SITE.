@@ -7,6 +7,7 @@ export default function Hero() {
   }
   return (
     <>
+    
       <div className="h-[55vh] grid items-center justify-items-center bg-black border border-slate-700 relative rounded-md">
         <div className="grid items-center justify-items-center text-center opacity-100 z-[1700]">
             <h1 className="text-5xl lg:text-4xl md:text-3xl sm:text-2xl font-bold text-slate-300">Much Anticipated Mystery</h1>

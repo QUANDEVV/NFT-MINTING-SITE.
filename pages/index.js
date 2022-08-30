@@ -15,7 +15,7 @@ export default function Index() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Navbar/>
-      {!address ? <Connect/> : <Dashboard/>}
+      {address ? <Connect/> : <Dashboard/>}
       {/* <Footer/> */}
     </>
   );

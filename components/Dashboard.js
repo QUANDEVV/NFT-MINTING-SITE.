@@ -29,7 +29,6 @@ export default function Dashboard() {
       const totalSupply = await nftdrop.totalSupply();
       const clmsupply = await nftdrop.totalClaimedSupply();
       const unclmsupply = await nftdrop.totalUnclaimedSupply();
-      console.log(getNFTs)
       
       setAllNFTs(getNFTs);
       setNFTsPrice(price?.[0].currencyMetadata);
@@ -70,7 +69,7 @@ export default function Dashboard() {
           </div>
           <div className="text-center">
             <h1>NFT Minted Successfully!</h1>
-            <Link href={`https://testnets.opensea.io/collection/kena`}><a target={`_blank`} className="text-blue-500 underline">View On Opensea</a></Link>
+            <Link href={`https://testnets.opensea.io/collection/100-ethicon-v2`}><a target={`_blank`} className="text-blue-500 underline">View On Opensea</a></Link>
           </div>
           <button type="button" className="active:scale-90 transition-all" onClick={() => toast.dismiss(t.id)}>
             <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" viewBox="0 0 20 20" fill="#f23023"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" /></svg>
@@ -112,3 +111,4 @@ export default function Dashboard() {
     </>
   );
 };
+
